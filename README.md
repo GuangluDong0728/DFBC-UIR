@@ -11,14 +11,14 @@
 Without requiring paired degraded-clean training data, DFBC-UIR constructs reliable pseudo pairs by faithfully transferring real degradation characteristics while preserving dense background correspondence with clean images.
 
 <p align="center">
-  <img src="figure/PAMI_Framework_01.jpg" width="90%">
+  <img src="figure/figure1_01.jpg" width="90%">
 </p>
 <p style="text-align: justify; text-justify: inter-word;">
   <em>
   Pseudo-degraded images synthesized by DFBC-UIR across multiple restoration tasks, including deraining, desnowing, specular highlight removal, demoireing, and shadow removal. The synthesized images preserve the underlying background content of clean inputs while faithfully transferring degradation characteristics from unpaired degraded references.
   </em>
   <br>
-  <b>High-resolution PDF:</b> <a href="assets/teaser.pdf">assets/teaser.pdf</a>
+  <b>High-resolution PDF:</b> <a href="figure/pseudo_degraded_image3_01.jpg">assets/teaser.pdf</a>
 </p>
 
 ## 🏗️ Method Overview
@@ -36,7 +36,7 @@ To this end, DFBC-UIR introduces a concise and general framework composed of thr
 - **Self-Reconstruction Strategy** for reducing degradation-irrelevant information transfer and improving synthesis reliability.
 
 <p align="center">
-  <img src="assets/framework.png" width="90%">
+  <img src="figure/PAMI_Framework_01.jpg" width="90%">
   <br>
   <em>Overview of DFBC-UIR: degradation-faithful and background-consistent pseudo-degradation synthesis for unsupervised image restoration.</em>
   <br>
@@ -60,7 +60,7 @@ Different from previous uses of guided filtering as a post-processing refiner or
   <br>
   <em>Illustration of the guided-filter-based background consistency loss. GFLoss performs degradation-robust image-domain background alignment, preserving dense content correspondence while allowing realistic degradation injection.</em>
   <br>
-  <b>High-resolution PDF:</b> <a href="assets/gfloss.pdf">assets/gfloss.pdf</a>
+  <b>High-resolution PDF:</b> <a href="figure/guided_filter_ssim_grouped_blocks_01.jpg">assets/gfloss.pdf</a>
 </p>
 
 ### 3. CLIP-Based Text-Guided Global Degradation Discrimination
@@ -68,25 +68,17 @@ Different from previous uses of guided filtering as a post-processing refiner or
 We introduce a **CLIP-based text-guided global degradation discriminator** to enforce image-level degradation-semantic alignment.  
 Instead of simply applying CLIP image-text similarity, the proposed TGGD uses task-aware positive and negative degradation prompts to adapt the vision-language semantic space for degradation discrimination. Combined with a standard local PatchGAN discriminator, it forms a complementary dual-discriminator design that improves degradation fidelity from both global semantic and local texture perspectives.
 
-<p align="center">
-  <img src="assets/tggd.png" width="80%">
-  <br>
-  <em>Text-Guided Global Degradation Discrimination. TGGD leverages vision-language semantic priors to provide global degradation-aware supervision beyond conventional patch-level adversarial constraints.</em>
-  <br>
-  <b>High-resolution PDF:</b> <a href="assets/tggd.pdf">assets/tggd.pdf</a>
-</p>
-
 ### 4. Self-Reconstruction for Reliable Degradation Transfer
 
 To suppress degradation-irrelevant information transfer, DFBC-UIR incorporates a self-reconstruction strategy.  
 This strategy encourages the generator to focus on degradation-related cues while avoiding the transfer of redundant background structures or edge textures from degraded reference images.
 
 <p align="center">
-  <img src="assets/self_reconstruction.png" width="80%">
+  <img src="figure/Redundant_Information_01.jpg" width="80%">
   <br>
   <em>Visualization of the redundant information transfer problem and the effect of the self-reconstruction strategy.</em>
   <br>
-  <b>High-resolution PDF:</b> <a href="assets/self_reconstruction.pdf">assets/self_reconstruction.pdf</a>
+  <b>High-resolution PDF:</b> <a href="figure/SRStrategy_01.jpg">assets/self_reconstruction.pdf</a>
 </p>
 
 ## 📊 Performance Highlights
@@ -114,7 +106,7 @@ Across **15 benchmarks** and **19 evaluation settings**, DFBC-UIR achieves state
 ### Visual Comparisons
 
 <p align="center">
-  <img src="assets/visual_deraining.png" width="90%">
+  <img src="figure/visual_deraining.png" width="90%">
   <br>
   <em>Visual comparison on image deraining benchmarks.</em>
   <br>
