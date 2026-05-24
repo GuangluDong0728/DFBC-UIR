@@ -10,10 +10,8 @@
 **DFBC-UIR** is a general unsupervised image restoration framework based on **Degradation-Faithful** and **Background-Consistent** pseudo-degraded image synthesis.  
 Without requiring paired degraded-clean training data, DFBC-UIR constructs reliable pseudo pairs by faithfully transferring real degradation characteristics while preserving dense background correspondence with clean images.
 
-> **Figure note.** GitHub README pages do not reliably render `.pdf` files as inline images. We recommend exporting each PDF figure to a `.png` preview for display, while keeping the original `.pdf` as a high-resolution link. The placeholders below follow the format `assets/xxx.png` for preview and `assets/xxx.pdf` for the original figure.
-
 <p align="center">
-  <img src="assets/teaser.png" width="90%">
+  <img src="figure/PAMI_Framework.pdf" width="90%">
 </p>
 <p style="text-align: justify; text-justify: inter-word;">
   <em>
