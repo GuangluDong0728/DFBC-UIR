@@ -106,21 +106,34 @@ Across **15 benchmarks** and **19 evaluation settings**, DFBC-UIR achieves state
 ### Visual Comparisons
 
 <p align="center">
-  <img src="figure/visual_deraining.png" width="90%">
+  <img src="figure/Rain100L_compare_01.jpg" width="90%">
   <br>
   <em>Visual comparison on image deraining benchmarks.</em>
-  <br>
-  <b>High-resolution PDF:</b> <a href="assets/visual_deraining.pdf">assets/visual_deraining.pdf</a>
 </p>
 
 <p align="center">
-  <img src="assets/visual_general_restoration.png" width="90%">
+  <img src="figure/Desnow_CSD_Compare_01.jpg" width="90%">
   <br>
-  <em>Visual comparison on desnowing, specular highlight removal, demoireing, and shadow removal tasks.</em>
-  <br>
-  <b>High-resolution PDF:</b> <a href="assets/visual_general_restoration.pdf">assets/visual_general_restoration.pdf</a>
+  <em>Visual comparison on image desnowing benchmarks.</em>
 </p>
 
+<p align="center">
+  <img src="figure/SHIQ_Compare_01.jpg" width="90%">
+  <br>
+  <em>Visual comparison on image specular highlight removal benchmarks.</em>
+</p>
+
+<p align="center">
+  <img src="figure/Demoire_results_01.jpg" width="90%">
+  <br>
+  <em>Visual comparison on image demoireing benchmarks.</em>
+</p>
+
+<p align="center">
+  <img src="figure/Shadow_results_01.jpg" width="90%">
+  <br>
+  <em>Visual comparison on image shadow removal benchmarks.</em>
+</p>
 ## 🛠️ Features
 
 - **🌦️ General Restoration Framework**: supports multiple degradation types without paired supervision.
@@ -134,16 +147,7 @@ Across **15 benchmarks** and **19 evaluation settings**, DFBC-UIR achieves state
 
 ```text
 DFBC-UIR/
-├── assets/                  # Figures used in README
-│   ├── teaser.png
-│   ├── teaser.pdf
-│   ├── framework.png
-│   ├── framework.pdf
-│   ├── gfloss.png
-│   ├── gfloss.pdf
-│   ├── tggd.png
-│   ├── tggd.pdf
-│   └── ...
+├── figure/                  # Figures used in README
 ├── configs/                 # Training and testing configuration files
 ├── datasets/                # Dataset preparation scripts
 ├── models/                  # Generator, restoration network, and discriminators
@@ -153,30 +157,6 @@ DFBC-UIR/
 ├── train.py
 ├── test.py
 └── README.md
-```
-
-## 🖼️ Preparing README Figures
-
-If your paper figures are currently stored as PDF files, we recommend generating PNG previews for GitHub display:
-
-```bash
-mkdir -p assets
-
-# Example: convert a single PDF figure to a PNG preview
-pdftoppm -png -singlefile assets/framework.pdf assets/framework
-
-# Batch conversion for all PDF figures under assets/
-for f in assets/*.pdf; do
-  name="${f%.pdf}"
-  pdftoppm -png -singlefile "$f" "$name"
-done
-```
-
-After conversion, each figure will have both:
-
-```text
-assets/framework.pdf   # High-resolution source
-assets/framework.png   # GitHub README preview
 ```
 
 ## 🚦 Quick Start
@@ -236,10 +216,10 @@ Please follow the official dataset licenses and download links. Dataset preparat
 If you find this work useful, please cite:
 
 ```bibtex
-@article{ren2026dfbc,
+@article{ren2026,
   title={Towards Degradation-Faithful and Background-Consistent Pseudo-Degradation Synthesis for Unsupervised Image Restoration},
   author={Ren, Chao and Dong, Guanglu},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  journal={},
   year={2026}
 }
 ```
