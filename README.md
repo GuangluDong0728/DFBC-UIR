@@ -17,8 +17,6 @@ Without requiring paired degraded-clean training data, DFBC-UIR constructs relia
   <em>
   Pseudo-degraded images synthesized by DFBC-UIR across multiple restoration tasks, including deraining, desnowing, specular highlight removal, demoireing, and shadow removal. The synthesized images preserve the underlying background content of clean inputs while faithfully transferring degradation characteristics from unpaired degraded references.
   </em>
-  <br>
-  <b>High-resolution PDF:</b> <a href="figure/pseudo_degraded_image3_01.jpg">assets/teaser.pdf</a>
 </p>
 
 ## 🏗️ Method Overview
@@ -39,8 +37,6 @@ To this end, DFBC-UIR introduces a concise and general framework composed of thr
   <img src="figure/PAMI_Framework_01.jpg" width="90%">
   <br>
   <em>Overview of DFBC-UIR: degradation-faithful and background-consistent pseudo-degradation synthesis for unsupervised image restoration.</em>
-  <br>
-  <b>High-resolution PDF:</b> <a href="assets/framework.pdf">assets/framework.pdf</a>
 </p>
 
 ## 🚀 Key Innovations
@@ -56,11 +52,9 @@ We introduce a novel **guided-filter-based background consistency loss** for pse
 Different from previous uses of guided filtering as a post-processing refiner or fixed filtering module, DFBC-UIR elevates guided image filtering to a **general training-time prior** for preserving principal background content during degradation transfer.
 
 <p align="center">
-  <img src="assets/gfloss.png" width="80%">
+  <img src="figure/guided_filter_ssim_grouped_blocks_01.jpg" width="80%">
   <br>
   <em>Illustration of the guided-filter-based background consistency loss. GFLoss performs degradation-robust image-domain background alignment, preserving dense content correspondence while allowing realistic degradation injection.</em>
-  <br>
-  <b>High-resolution PDF:</b> <a href="figure/guided_filter_ssim_grouped_blocks_01.jpg">assets/gfloss.pdf</a>
 </p>
 
 ### 3. CLIP-Based Text-Guided Global Degradation Discrimination
@@ -74,11 +68,12 @@ To suppress degradation-irrelevant information transfer, DFBC-UIR incorporates a
 This strategy encourages the generator to focus on degradation-related cues while avoiding the transfer of redundant background structures or edge textures from degraded reference images.
 
 <p align="center">
-  <img src="figure/Redundant_Information_01.jpg" width="80%">
-  <br>
-  <em>Visualization of the redundant information transfer problem and the effect of the self-reconstruction strategy.</em>
-  <br>
-  <b>High-resolution PDF:</b> <a href="figure/SRStrategy_01.jpg">assets/self_reconstruction.pdf</a>
+  <img src="figure/Redundant_Information_01.jpg" width="48%">
+  <img src="figure/SRStrategy_01.jpg" width="48%">
+</p>
+
+<p align="center">
+  <em>Left: Visualization of the redundant information transfer problem and the effect of the self-reconstruction strategy. Right: Visualization of the self-reconstruction strategy.</em>
 </p>
 
 ## 📊 Performance Highlights
@@ -96,11 +91,24 @@ DFBC-UIR is evaluated on five representative unsupervised image restoration task
 Across **15 benchmarks** and **19 evaluation settings**, DFBC-UIR achieves state-of-the-art performance among unsupervised methods, with PSNR improvements of up to **2.31 dB** over the strongest unsupervised competitors.
 
 <p align="center">
-  <img src="assets/quantitative_results.png" width="90%">
-  <br>
+  <img src="figure/rain.jpg" width="90%">
+</p>
+
+<p align="center">
+  <img src="figure/snow.jpg" width="48%">
+  <img src="figure/highlight.jpg" width="48%">
+</p>
+
+<p align="center">
+  <img src="figure/moire.jpg" width="90%">
+</p>
+
+<p align="center">
+  <img src="figure/shadow.jpg" width="90%">
+</p>
+
+<p align="center">
   <em>Quantitative comparison with existing unsupervised and supervised restoration methods across multiple tasks and datasets.</em>
-  <br>
-  <b>High-resolution PDF:</b> <a href="assets/quantitative_results.pdf">assets/quantitative_results.pdf</a>
 </p>
 
 ### Visual Comparisons
