@@ -52,6 +52,10 @@ We introduce a novel **guided-filter-based background consistency loss** for pse
 Different from previous uses of guided filtering as a post-processing refiner or fixed filtering module, DFBC-UIR elevates guided image filtering to a **general training-time prior** for preserving principal background content during degradation transfer.
 
 <p align="center">
+  <img src="figure/GF_01.jpg" width="80%">
+</p>
+
+<p align="center">
   <img src="figure/guided_filter_ssim_grouped_blocks_01.jpg" width="80%">
   <br>
   <em>Illustration of the guided-filter-based background consistency loss. GFLoss performs degradation-robust image-domain background alignment, preserving dense content correspondence while allowing realistic degradation injection.</em>
