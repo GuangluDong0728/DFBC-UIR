@@ -11,7 +11,7 @@
 Without requiring paired degraded-clean training data, DFBC-UIR constructs reliable pseudo pairs by faithfully transferring real degradation characteristics while preserving dense background correspondence with clean images.
 
 <p align="center">
-  <img src="figure/PAMI_Framework.jpg" width="90%">
+  <img src="figure/PAMI_Framework_01.jpg" width="90%">
 </p>
 <p style="text-align: justify; text-justify: inter-word;">
   <em>
