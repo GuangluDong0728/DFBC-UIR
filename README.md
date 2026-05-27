@@ -238,8 +238,8 @@ If you find this work useful, please cite:
 
 ## 🙏 Acknowledgement
 
-This work builds on our earlier conference version on unsupervised image deraining and substantially extends it to a more general unsupervised image restoration framework.  
-We also thank the authors of CLIP, guided image filtering, PatchGAN, and related image restoration benchmarks for their valuable open-source contributions.
+This work builds on our earlier [CVPR2025](https://openaccess.thecvf.com/content/CVPR2025/papers/Dong_Channel_Consistency_Prior_and_Self-Reconstruction_Strategy_Based_Unsupervised_Image_Deraining_CVPR_2025_paper.pdf) conference version [CSUD](https://github.com/GuangluDong0728/CSUD-Unsupervised-Deraining-CVPR2025) on unsupervised image deraining and substantially extends it to a more general unsupervised image restoration framework.  
+We also thank the authors of [CLIP](https://github.com/openai/CLIP), [guided image filtering](https://ieeexplore.ieee.org/abstract/document/6319316), [PatchGAN](https://arxiv.org/abs/1611.07004), and related image restoration benchmarks for their valuable open-source contributions.
 
 ## 📬 Contact
 
