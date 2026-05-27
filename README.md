@@ -1,12 +1,6 @@
 # DFBC-UIR
 # Towards Degradation-Faithful and Background-Consistent Pseudo-Degradation Synthesis for Unsupervised Image Restoration
 
-[![Paper](https://img.shields.io/badge/Paper-TPAMI%202026-blue)](#)
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-red)](#)
-[![Project Page](https://img.shields.io/badge/Project-Page-green)](#)
-[![GitHub Stars](https://img.shields.io/github/stars/chaoren88/DFBC-UIR?style=social)](https://github.com/chaoren88/DFBC-UIR)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
 **DFBC-UIR** is a general unsupervised image restoration framework based on **Degradation-Faithful** and **Background-Consistent** pseudo-degraded image synthesis.  
 Without requiring paired degraded-clean training data, DFBC-UIR constructs reliable pseudo pairs by faithfully transferring real degradation characteristics while preserving dense background correspondence with clean images.
 
